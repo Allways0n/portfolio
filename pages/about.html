@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- STYLES -->
+    <link href="/style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- JAVASCRIPT -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+	<script defer src="/script.js"></script>
+</head>
+<body>
+    <header>
+<!-- NAVBAR -->
+        <nav class="navbar fixed-top d-block navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+                <!-- BRAND -->
+                <a href="#home" class="navbar-brand logo text-uppercase">Kyrylo <span class="gradient-text">Kramarchuk</span></a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- ----------- -->
+                <!-- LINKS -->
+                <div class="collapse navbar-collapse ms-3" id="nav">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" id="my-nav">
+                        <a href="../index.html" class="nav-link animated-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/about.html" class="nav-link animated-link active">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/apps.html" class="nav-link animated-link" aria-current="page">Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/contact.html" class="nav-link animated-link">Contact</a>
+                    </li>
+                </ul>
+                </div>
+                <!-- ----------- -->
+            </div>
+        </nav>
+<!-- ----------- -->
+    </header>
+
+<!-- MAIN -->
+    <main class="about" id="about">
+        <section>
+            <div class="container my-4">
+                <div class="row justify-content-center gy-5">
+                    <div class="col-12 text-center">
+                        <div class="avatar">
+                            <img src="/images/me.jpg" alt="profile image">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="content border border-2 border-warning rounded-5 p-3">
+                            <h2 class="text-center"><span class="gradient-text fs-1">Software Engineer</span> with 10+ years of iOS development</h3>
+                            <p class="fs-5 fw-normal lh-base pt-3">
+                                I enjoy solving complex technical and business challenges and turning ideas into stable, scalable products. Keeping focus on clean architecture, maintainable code, and high quality at every stage of development. <br>
+                                7+ projects from scratch to App Store within different domains, such as: dating, social media, messengers, B2B solutions, pay systems, WebRTC.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- ----------- -->
+<!-- FOOTER -->
+    <footer>
+        <div class="footer fixed-bottom w-auto text-center">
+            <p class="copyright fs-6 text-center m-4">
+				© Kyrylo Kramarchuk | All Rights Reserved
+			</p>
+        </div>
+    </footer>
+<!-- ----------- -->
+</body>
+</html>

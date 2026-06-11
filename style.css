@@ -1,0 +1,327 @@
+/* GENERAL */
+:root {
+	--bg-color: #080808;
+	--second-bg-color: #101010;
+	--text-color: white;
+	--second-text-color: #ea580c;
+	--main-color: #ea580c;
+	--main-gradient: linear-gradient(
+		/* from left to the right */
+		270deg,
+		#DF8908 10%,
+		#ff1d15 100%
+	);
+    --max-width: 2000px;
+}
+html {
+	font-size: 80%;
+}
+body {
+	background: var(--bg-color);
+	color: var(--text-color);
+	margin-bottom: 15%;
+}
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+span.gradient-text {
+	background-image: var(--main-gradient);
+	color: transparent;
+	background-clip: text;
+}
+
+/* ========== SCROLLBAR ========== */
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--main-color);
+	border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+	background-color: var(--bg-color);
+}
+
+/* ========== HEADER ========== */
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    z-index: 1000;
+}
+/* NAVBAR LINKS */
+.animated-link {
+    position: relative;
+    display: inline-block;
+}
+.animated-link::after {
+    content: '';
+	width: 0;
+	height: 3px;
+	background: var(--main-color);
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	transition: 0.3s ease-in-out;
+}
+.animated-link:hover::after {
+    color: var(--main-color);
+	width: 100%;
+}
+
+/* ========== LOGO ========== */
+
+.navbar-brand.logo {
+	font-size: 2rem;
+	font-weight: 800;
+	padding: 0 0 0 2.5rem;
+	/* keeps words on a same line */
+	white-space: nowrap;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+.logo:hover {
+	transform: scale(1.1);
+	filter: brightness(.8);
+}
+
+/* ========== FOOTER ========== */
+
+.footer {
+	background-color: var(--second-bg-color);
+}
+
+/* ========== HOME ========== */
+
+main {
+	position: relative;
+	top: 7vh;
+}
+/* BUTTONS */
+/* Gradient Button */
+.gradient-btn {
+	font-size: 1.8rem;
+	padding: 1rem 2rem;
+	margin: 0 1.2rem 0 0;
+	border-radius: 3rem;
+	background: linear-gradient(
+		/* from left to the right */
+		270deg,
+		#DF8908 10%,
+		#ff1d15 100%
+	);
+	letter-spacing: 1px;
+	/* something clickable */
+	cursor: pointer;
+	/* smooth transition */
+	transition: 0.3s ease-in-out;
+	color: white;
+	border: none;
+	/* responsiveness */
+	text-wrap: nowrap;
+}
+.gradient-btn:hover {
+	transform: scale(1.05);
+}
+.gradient-btn:focus,
+.gradient-btn:focus-visible {
+    border: none;
+    outline: none;
+}
+/* AVATAR */
+.avatar img {
+	position: relative;
+	width: 32vw;
+	height: 32vw;
+	object-fit: cover;
+	/* circle */
+	border-radius: 50%;
+	/* glowing effect */
+	box-shadow: 0 0 25px var(--main-color);
+	transition: 0.4s ease-in-out;
+}
+.avatar img:hover {
+	box-shadow: 0 0 25px var(--main-color),
+				0 0 50px var(--main-color),
+				0 0 100px var(--main-color);
+}
+/* SOCIAL ICONS */
+.social-icons-group {
+	display: block;
+}
+.social-icons-group a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	padding: 1rem;
+	background: transparent;
+	border: 2px solid var(--main-color);
+	border-radius: 50%;
+	color: var(--main-color);
+	margin: 3rem 0.5rem;
+	transition: 0.3s ease-in-out;
+}
+.social-icons-group a:hover {
+	color: var(--text-color);
+	background-color: var(--main-color);
+	/* chaining effects */
+	transform: scale(1.2)translateY(-5px);
+	box-shadow: 0 0 25px var(--main-color);
+}
+/* prevents image from stretching */
+.social-icons-group a img {
+	object-fit: contain;
+}
+/* BUTTONS */
+.btn-group-custom {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+.btn-group-custom a:nth-of-type(2) {
+	background-color: black;
+	color: var(--main-color);
+	border: 2px solid var(--main-color);
+	box-shadow: 0 0 25px transparent;
+}
+.btn-group-custom a:nth-of-type(2):hover {
+	box-shadow: 0 0 25px var(--main-color);
+	background-color: var(--main-color);
+	color: black;
+}
+.btn-custom {
+	display: inline-block;
+	padding: 1rem 3rem;
+	background-color: var(--main-color);
+	box-shadow: 0 0 25px var(--main-color);
+	border-radius: 3rem;
+	font-size: 1.8rem;
+	color: black;
+	border: 2px solid transparent;
+	font-weight: 600;
+	transition: 0.3s ease-in-out;
+}
+.btn-custom:hover {
+	transform: scale(1.05);
+    color: black;
+	background-color: var(--main-color);
+	box-shadow: 0 0 25px var(--main-color),
+				0 0 50px var(--main-color);
+}
+/* CONTENT */
+.info h1 {
+	font-size: 8rem;
+	font-weight: 700;
+	margin-top: 1rem;
+	line-height: 1;
+}
+.info h3 {
+	margin: 1rem 0;
+	font-size: 4rem;
+}
+.info p {
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 1.8;
+}
+
+/* ========== APPS ========== */
+
+.card-img-top {
+	object-fit: cover;
+	border-radius: 25%;
+}
+.app-preview {
+	position: relative;
+	object-fit: cover;
+	border-radius: 25%;
+	/* glowing effect */
+	box-shadow: 0 0 25px var(--main-color);
+	transition: 0.4s ease-in-out;
+}
+.app-preview:hover {
+	transform: scale(1.05);
+	background-color: var(--main-color);
+	box-shadow: 0 0 25px var(--main-color),
+				0 0 50px var(--main-color);
+}
+/* MODAL */
+.modal-header {
+	background-color: var(--second-bg-color);
+	color: var(--main-color);
+}
+.modal-header .btn-close {
+	background-color: var(--main-color)
+
+}
+.modal-body {
+	background-color: var(--second-bg-color);
+	color: white;
+}
+
+/* ========== CONTACT ========== */
+
+.btn-custom-submit {
+	height: 5rem;
+	font-size: 1.8rem;
+	font-weight: 800;
+}
+.btn-download {
+	height: 5rem;
+	font-size: 1.8rem;
+	font-weight: 800;
+}
+
+/* ========== RESPONSIVENESS ========== */
+
+/* @media (min-width: 300px) {
+    body::before {
+        content: "S";
+		color: red;
+		font-weight: 800;
+		font-size: 1.5rem;
+    }
+}
+@media (min-width: 576px) {
+    body::before {
+        content: "SM";
+		color: red;
+		font-weight: 800;
+		font-size: 1.5rem;
+    }
+}
+@media (min-width: 768px) {
+    body::before {
+        content: "MD";
+		color: red;
+		font-weight: 800;
+		font-size: 1.5rem;
+    }
+}
+@media (min-width: 992px) {
+    body::before {
+        content: "LG";
+		color: red;
+		font-weight: 800;
+		font-size: 1.5rem;
+    }
+}
+@media (min-width: 1200px) {
+    body::before {
+        content: "XL";
+		color: red;
+		font-weight: 800;
+		font-size: 1.5rem;
+    }
+}
+@media (min-width: 1400px) {
+    body::before {
+        content: "XXL";
+		color: red;
+		font-weight: 800;
+		font-size: 1.5rem;
+    }
+} */

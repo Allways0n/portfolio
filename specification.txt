@@ -1,0 +1,78 @@
+HTML tags:
+1. meta
+2. link
+3. header
+4. script
+5. main
+6. section
+7. div
+8. nav
+9. a
+10. img
+11. ul
+12. li
+13. i
+14. button
+15. span
+16. br
+17. h1
+18. h2
+19. h3
+20. footer
+21. p
+22. h5
+23. pre
+24. input
+25. label
+26. textarea
+
+CSS properties:
+1. var, custom properties
+2. font-size
+3. font-weight
+4. background
+5. color
+6. background-color
+7. margin-bottom
+8. white-space
+9. word-wrap
+10. background-image
+11. background-clip
+12. width
+13. border-radius
+14. position
+15. z-index
+16. display
+17. content
+18. height
+19. left
+20. transition
+21. padding
+22. cursor
+23. transform
+24. filter
+25. top
+26. margin
+27. letter-spacing
+28. text-wrap
+29. outline
+30. object-fit
+31. box-shadow
+32. justify-content
+33. align-items
+34. gap
+35. line-height
+
+Using JavaScript:
+Used for varying modal content. For my all apps (4) I used different icons, links, title and body.
+By clicking on any of the app - my script pulls data from attributes database and inserts inside the modal window.
+Form validation along with try-catch-finally solution
+
+Using Bootstrap:
+1. Grid system: colums, rows (RESPONSIVENESS)
+2. Navigation bar
+3. Form
+4. Main Container system
+5. Buttons
+6. Modal window
+7. Attributes like: text-center, padding, margin, width, font size, display, position, borders, active links

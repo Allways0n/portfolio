@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- STYLES -->
+    <link href="/style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- JAVASCRIPT -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+	<script defer src="/script.js"></script>
+</head>
+<body>
+    <header>
+<!-- NAVBAR -->
+        <nav class="navbar fixed-top d-block navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+                <!-- BRAND -->
+                <a href="#home" class="navbar-brand logo text-uppercase">Kyrylo <span class="gradient-text">Kramarchuk</span></a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-label="Expand Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- ----------- -->
+                <!-- LINKS -->
+                <div class="collapse navbar-collapse ms-3" id="nav">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" id="my-nav">
+                        <a href="../index.html" class="nav-link animated-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/about.html" class="nav-link animated-link" aria-current="page">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/apps.html" class="nav-link animated-link">Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/pages/contact.html" class="nav-link animated-link active" aria-current="page">Contact</a>
+                    </li>
+                </ul>
+                </div>
+                <!-- ----------- -->
+            </div>
+        </nav>
+<!-- ----------- -->
+    </header>
+<!-- ----------- -->
+<!-- MAIN -->
+    <main class="contact" id="contact">
+        <section>
+            <div class="container my-4 pb-3 position-relative">
+                <h1 class="text-center">Contact <span class="gradient-text">Me</span></h1>
+
+                <!-- FORM -->
+                <form class="contact-form needs-validation my-4" novalidate>
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <div class="form-floating m-3">
+                                <input name="firstName" type="text" class="form-control" id="floatingInput" placeholder="John" id="validationCustomUserFirstName" required>
+                                <label for="floatingInput">First name</label>
+                                <div class="invalid-feedback">
+                                    Please provide valid first name
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating m-3">
+                                <input name="lastName" type="text" class="form-control" id="floatingInput" placeholder="Doe" id="validationCustomUserLastName" required>
+                                <label for="floatingInput">Last name</label>
+                                <div class="invalid-feedback">
+                                    Please provide valid last name
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <div class="form-floating m-3">
+                                <input name="phone" type="tel" class="form-control" id="floatingInput" placeholder="1234-567-8900" id="validationCustomUserPhone" pattern="^\d{4}-\d{3}-\d{4}$" required>
+                                <label for="floatingInput">Phone number</label>
+                                <div class="invalid-feedback">
+                                    Please provide valid phone number (1234-567-8900)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating m-3">
+                                <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" id="validationCustomUserEmail" required>
+                                <label for="floatingInput">Email address</label>
+                                <div class="invalid-feedback">
+                                    Please provide valid email
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-2 justify-content-center">
+                        <div class="col-md-8">
+                            <div class="form-floating m-3">
+                                <textarea name="message" class="form-control" placeholder="Message" id="floatingTextarea" style="height: 100px"></textarea>
+                                <label for="floatingTextarea">Message</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container mt-4">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col text-center">
+                                <button type="submit" class="btn btn-custom w-100">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- ----------- -->
+                <!-- SOCIAL ICONS -->
+                <div class="container text-center">
+                    <div class="social-icons-group">
+                        <a href="https://github.com/Allways0n" class="btn" target="_blank">
+                        <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="https://linkedin.com/in/kyrylo-kramarchuk" class="btn" target="_blank">
+                            <i class="bx bxl-linkedin-square"></i>
+                        </a>
+                        <a href="https://x.com/sav3rt3ka" class="btn" target="_blank">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                        <a href="mailto:kyrylo.kramarchuk@gmail.com" class="btn">
+                            <i class="bx bx-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- ----------- -->
+                 <!-- DOWNLOAD CV -->
+                 <div class="container mt-4 pb-5">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col text-center">
+                            <a href="/cv/Kyrylo_Kramarchuk_CV_PR.pdf" download>
+                                <button type="submit" class="btn btn-custom btn-download">Download CV</button>
+                            </a>
+                        </div>
+                    </div>
+                 </div>
+                 <!-- ----------- -->
+            </div>
+        </section>
+    </main>
+<!-- ----------- -->    
+<!-- FOOTER -->
+    <footer>
+        <div class="footer fixed-bottom w-auto text-center">
+            <p class="copyright fs-6 text-center m-4">
+				© Kyrylo Kramarchuk | All Rights Reserved
+			</p>
+        </div>
+    </footer>
+<!-- ----------- -->
+</body>
+</html>
